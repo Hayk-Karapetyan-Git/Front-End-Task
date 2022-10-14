@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+body {
+  background-color: #bdd2b6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #a2b29f;
+  max-width: 60%;
+  border: 1px solid #f8ede3;
+  border-radius: 10px;
+  box-shadow: 0px 0px 27px 0px #f8ede3;
+}
+
+h1 {
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #fff;
+    margin: 1.5rem 3rem;
+    border-bottom: 2px solid  #f8ede3;
+    border-top: 2px solid  #f8ede3;
+
+    border-radius: 10px;
+}
+
+.container-form {
+    background-color: #f8ede3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 15px;
+    gap: 30px;
+}
+
+.flex-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-div div {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+i {
+    visibility: hidden;
+    position: absolute;
+    right: 15px;
+}
+
+.labels {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 2rem;
+    color: #798777;
+    padding: 0 10px;
+    
+}
+
+
+
+.primary-input {
+    padding: 15px 30px;
+    border: 1px solid #798777;
+    background-color: #F8EDE3;
+    border-radius: 5px;
+    margin-left: 1.5rem;
+    font-family: "Ubuntu";
+}
+
+
+.sports-label {
+    font-family: "Ubuntu";
+    color: #F8EDE3;
+    font-size: 1.5rem;
+    border: 1px solid #798777;
+    border-radius: 5px;
+    padding: 3px 5px;
+    background-color: #798777;
+}
+
+
+
+.form-btn {
+    padding: 15px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: #798777;
+    color: #fff;
+    font-family: "Ubuntu";
+    font-size: 2rem;
+    font-weight: 700;
+  box-shadow:inset 0px 0px 27px 0px #f8ede3;
+
+}
+
+.form-btn:hover {
+    color: #798777;
+    background-color: #f8ede3;
+  box-shadow:inset 0px 0px 27px 0px #798777;
+}
+
+/* Dinamically added classes*/
+
+.active {
+    border-left: 1px solid #798777;
+    border-right: 1px solid #798777;
+    border-radius: 8px;
+}
+
+.success {
+    border-color: rgb(136, 202, 37);
+}
+
+.ex {
+    border-color: red;
+}
+
+.ex ~.ex-icon {
+    visibility: visible;
+    color: red;
+}
+
+.success ~.success-icon{
+    visibility: visible;
+    color: rgb(136, 202, 37);
+}

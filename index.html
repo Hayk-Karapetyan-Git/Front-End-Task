@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The task has two Parts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Create Account</h1>
+      <form id="form" class="container-form">
+        <div class="flex-div form-firstname" id="formFirstName">
+          <label class="labels" for="firstNameInput">First Name:</label>
+          <div>
+            <input
+              type="text"
+              name="firstname"
+              id="firstNameInput"
+              class="firstname-input primary-input"
+              placeholder="exampleFirstName"
+            />
+            <i class="fas fa-circle-check success-icon"></i>
+            <i class="fas fa-circle-exclamation ex-icon"></i>
+          </div>
+        </div>
+        <div class="flex-div form-lastname" id="formLastName">
+          <label class="labels" for="lastNameInput">Last Name:</label>
+          <div>
+            <input
+              type="text"
+              name="lastname"
+              id="lastNameInput"
+              class="lastname-input primary-input"
+              placeholder="exampleLastName"
+            />
+            <i class="fas fa-circle-check success-icon"></i>
+            <i class="fas fa-circle-exclamation ex-icon"></i>
+          </div>
+        </div>
+        <div class="flex-div form-date" id="formDate">
+          <label class="labels" for="dateInput">Date of Birth:</label>
+          <div>
+            <input
+              type="text"
+              name="date"
+              id="dateInput"
+              class="date-input primary-input"
+              placeholder="DD/MM/YYYY"
+            />
+            <i class="fas fa-circle-check success-icon"></i>
+            <i class="fas fa-circle-exclamation ex-icon"></i>
+          </div>
+        </div>
+        <div class="flex-div form-email" id="formEmail">
+          <label class="labels" for="emailInput">Email Adress:</label>
+          <div>
+            <input
+              type="email"
+              name="email"
+              id="emailInput"
+              class="email-input primary-input"
+              placeholder="exampleEmail"
+            />
+            <i class="fas fa-circle-check success-icon"></i>
+            <i class="fas fa-circle-exclamation ex-icon"></i>
+          </div>
+        </div>
+        <div class="flex-div form-phone" id="formPhone">
+          <label class="labels" for="phoneInput">Phone Number:</label>
+          <div>
+            <input
+              type="tel"
+              name="phone"
+              id="phoneInput"
+              class="phone-input primary-input"
+              placeholder="examplePhone"
+            />
+            <i class="fas fa-circle-check success-icon"></i>
+            <i class="fas fa-circle-exclamation ex-icon"></i>
+          </div>
+        </div>
+        <div class="form-sports" id="formSports">
+          <label class="labels">Favorite Sports:</label>
+          <input
+            class="sports-input"
+            type="checkbox"
+            id="chess"
+            name="chess"
+            value="Chess"
+          />
+          <label class="sports-label" for="chess">Chess</label>
+          <input
+            class="sports-input"
+            type="checkbox"
+            id="hunting"
+            name="hunting"
+            value="Hunting"
+          />
+          <label class="sports-label" for="hunting">Hunting</label>
+          <input
+            class="sports-input"
+            type="checkbox"
+            id="football"
+            name="football"
+            value="Football"
+          />
+          <label class="sports-label" for="football">Football</label
+          ><br /><br />
+        </div>
+
+        <button value="submit" id="btn" class="form-btn">Submit</button>
+      </form>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/5ce920ebb2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
