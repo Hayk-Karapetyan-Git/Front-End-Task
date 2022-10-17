@@ -17,13 +17,17 @@ const momentMask = new IMask(dateInput, {
   lazy: true,
 });
 
-
-
 const setExFor = (target) => {
+    if(target.classList.contains('success')){
+        target.classList.remove('success')
+    }
     target.classList.add('ex')
 }
 
 const setSuccess = (target) => {
+    if(target.classList.contains('ex')){
+        target.classList.remove('ex')
+    }
     target.classList.add('success')
 }
 
@@ -39,7 +43,6 @@ const checkInputSucces = () => {
     const dateValue = dateInput.value.trim()
     const emailValue = emailInput.value.trim()
     const phoneValue = phoneInput.value.trim()
-
     if(firstNameValue == ""){
         setExFor(firstNameInput)
     }else {
@@ -63,6 +66,6 @@ const checkInputSucces = () => {
     if(phoneValue == ""){
         setExFor(phoneInput)
     }else {
-        setSuccess(firstNameInput)
+        setSuccess(phoneInput)
     }
 }
