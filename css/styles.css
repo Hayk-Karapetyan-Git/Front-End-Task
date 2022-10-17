@@ -136,3 +136,26 @@ i {
     visibility: visible;
     color: rgb(136, 202, 37);
 }
+
+
+@media (max-width : 800px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .labels {
+        font-size: 1rem;
+    }
+
+    .primary-input {
+        padding: 5px 15px;
+    }
+
+    .sports-label {
+        font-size: 1rem;
+    }
+
+    .form-btn  {
+        font-size: 1.3rem;
+    }
+}
